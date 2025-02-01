@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.container {
+    background-color: #f7f6f6;
+}
+.container .project {
+    height: 100%;
+    padding: 50px 100px;
+}
+.container .project .info {
+    text-align: center;
+}
+.container .project .info h1 {
+    font-size: 40px;
+}
+.container .project .info h1:first-child {
+    font-weight: 200;
+}
+.container .project .info h1:last-child {
+    font-weight: 800;
+}
+.container .project .info p {
+    margin-top: 20px;
+    color: rgb(129, 124, 124);
+}
+.container .project .cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 80px 0px 20px;
+}
+.container .project .cards .card {
+    padding: 30px;
+    background: red;
+    max-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 8px;
+    background-color: white;
+    flex-grow: 1;
+
+}
+.container .project .cards .card .title {
+    font-weight: 600;
+    font-size: 20px;
+}
+.container .project .cards .card .description {
+    margin-top: 20px;
+    opacity: 0.5;
+}
+.container .project .cards .card .image {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+.container .project .cards .mid-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+
+.container .project .cards .card-1 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.container .project .cards .card-2 {
+    border-top: 5px solid hsl(0, 78%, 62%)
+}
+.container .project .cards .card-3 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.container .project .cards .card-4 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+@media (min-width:1100px) {
+    .container .project .cards .card-1 , .container .project .cards .card-4 {
+        transform: translate(0 , 50%);
+    }
+}
+@media (max-width: 1100px) {
+    .container .project .cards {
+        flex-direction: column;
+    }
+    .container .project .cards .card {
+        margin: auto;
+        width: 100%;
+    }
+    .container .project {
+        padding: 50px;
+    }
+}
